@@ -1,0 +1,161 @@
+{
+  "products": [
+    {
+      "name": "Phân bón",
+      "image": "https://th.bing.com/th/id/OIP.1kCyT6S1m4jsVsqBx0AXcQHaFi?rs=1&pid=ImgDetMain",
+      "id": 6,
+      "price": "124121",
+      "category": "2",
+      "deskiptions": "Phân ure có 2 dạng mỗi dạng có những đặc điểm riêng biệt khác nhau.  – Loại tinh thể màu trắng, hạt tròn, dễ tan trong nước. Nhược điểm là hút ẩm mạnh  – Loại có dạng viên, nhỏ như trứng cá. Loại này có thêm chất chống ẩm, dễ bảo quản, dễ vận chuyển. Đây là phân được sử dụng khá nhiều trong nông nghiệp.",
+      "about": "Đạm có trong thành phần tất cả các protein đơn giản và phức tạp, mà nó là thành phần chính của màng tế bào thực vật, tham gia vào thành phần của axit Nucleic (tức ADN và ARN), có vai trò cực kỳ quan trọng trong trao đổi vật chất của các cơ quan thực vật."
+    },
+    {
+      "name": "cây thủy sinh",
+      "image": "https://thanhcongflowers.com/wp-content/uploads/2024/01/ac544ecef80b53550a1a.jpg",
+      "price": "121132",
+      "category": "6",
+      "id": 7,
+      "deskiptions": "Nếu như sự kết hợp giữa chậu và cây đã tạo nên một vẻ đẹp tuyệt vời thì giờ đây với các viên sỏi trang trí nhiều màu sắc, lớn nhỏ khác nhau, sẽ làm vẻ đẹp ấy được nâng lên tầm cao mới.",
+      "about": "Cây trồng tại trang trại Củ Chi, sử dụng 100% giống F1 và phân hữu cơ trong quá trình nuôi cây phát triển.  Rễ cây rất khỏe vì được nuôi dưỡng tự nhiên, không bị ép phân hóa học liều lượng cao để kích phát triển, do đó các bạn hoàn toàn yên tâm khi mua về để chăm sóc lâu dài."
+    },
+    {
+      "name": "Cây cảnh",
+      "image": "https://i5.walmartimages.com/seo/EDIMENS-Artificial-Monstera-Plants-28-Fake-Plants-Tropical-Palm-Tree-with-Plastic-Plant-Pot-Desk-Faux-Plants-Indoor-for-Home-Decor-18-Leaves_b7589aba-ac35-470e-b00e-bf4d8960ad3b.78725115c9bf59b43ddc1de06f08cfa6.jpeg",
+      "id": 8,
+      "price": "124121",
+      "category": "6",
+      "deskiptions": "Nếu như sự kết hợp giữa chậu và cây đã tạo nên một vẻ đẹp tuyệt vời thì giờ đây với các viên sỏi trang trí nhiều màu sắc, lớn nhỏ khác nhau, sẽ làm vẻ đẹp ấy được nâng lên tầm cao mới.",
+      "about": "Cây trồng tại trang trại Củ Chi, sử dụng 100% giống F1 và phân hữu cơ trong quá trình nuôi cây phát triển.  Rễ cây rất khỏe vì được nuôi dưỡng tự nhiên, không bị ép phân hóa học liều lượng cao để kích phát triển, do đó các bạn hoàn toàn yên tâm khi mua về để chăm sóc lâu dài."
+    },
+    {
+      "name": "Đèn treo tường",
+      "image": "https://th.bing.com/th/id/R.cdcb62a38780e83d105854a380bae93a?rik=pctDLXjYnNeMJg&riu=http%3a%2f%2fdensankhaumasu.com%2fupload%2fsanpham%2fden-roi-ray-mat-trau-trang-tri-cua-hang-quan-cafe-ledmino-6501.jpg&ehk=4xXmy%2fHrHqJDNlPWhGX0KfS3%2bxVhpc1CVhgIyK8t3Yc%3d&risl=&pid=ImgRaw&r=0",
+      "id": 9,
+      "price": "141421",
+      "category": "4",
+      "deskiptions": "Sở hữu thiết kế hiện đại, tinh tế với những đường nét thanh mảnh, đèn thả FH25/40-W/B/Y mang đến vẻ đẹp sang trọng và đẳng cấp cho không gian phòng ăn của bạn. Chụp đèn làm bằng nhựa Acrylic bền bỉ, sử dụng bóng đèn LED với ánh sáng dịu nhẹ, tạo cảm giác ấm cúng, thư giãn và kích thích sự ngon miệng cho những bữa ăn.",
+      "about": "Led 220V GT420 Ngân Tin với lối thiết kế phong cách cổ điển của Châu ÂU mà vẫn đẹp tinh tế từ hợp kim xi chrome cao cấp, đẹp, sang trọng tạo cảm giác không gian yên ả tĩnh lặng."
+    },
+    {
+      "name": "Đèn Sang trọng",
+      "image": "https://th.bing.com/th/id/OIP.ZVsm9zldEaVWEu0qkYaPKwHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+      "price": "141421",
+      "category": "4",
+      "id": 10,
+      "deskiptions": "Sở hữu thiết kế hiện đại, tinh tế với những đường nét thanh mảnh, đèn thả FH25/40-W/B/Y mang đến vẻ đẹp sang trọng và đẳng cấp cho không gian phòng ăn của bạn. Chụp đèn làm bằng nhựa Acrylic bền bỉ, sử dụng bóng đèn LED với ánh sáng dịu nhẹ, tạo cảm giác ấm cúng, thư giãn và kích thích sự ngon miệng cho những bữa ăn.",
+      "about": "Led 220V GT420 Ngân Tin với lối thiết kế phong cách cổ điển của Châu ÂU mà vẫn đẹp tinh tế từ hợp kim xi chrome cao cấp, đẹp, sang trọng tạo cảm giác không gian yên ả tĩnh lặng."
+    },
+    {
+      "name": "Chậu cây",
+      "image": "https://th.bing.com/th/id/OIP.N-PutSMc6C8jggCgZdqb1wHaHa?rs=1&pid=ImgDetMain",
+      "price": "12312321",
+      "category": "5",
+      "id": 11,
+      "deskiptions": "Chậu xi măng tròn sơn đỏ được làm từ đá cát vàng và đá nghiền nhỏ được kết dính với nhau bằng xi măng.  Chậu được làm từ những nguyên liệu bền bỉ chịu được nắng gió và thời tiết khắc nhiệt theo đúng tư tưởng nồi đồng cối đá của người Việt Nam.",
+      "about": "Khay nhựa trồng cúc tần được thiết kế bởi công nghệ của Nhật Bản. Khay có thể di chuyển trong quá trình trồng và bảo quản một cách dễ dàng trong quá trình sử dụng."
+    },
+    {
+      "name": "Chậu cây",
+      "image": "https://i.pinimg.com/originals/18/bb/64/18bb647f3d68983c8241083616384081.jpg",
+      "price": "12312321",
+      "category": "5",
+      "id": 12,
+      "deskiptions": "Chậu xi măng tròn sơn đỏ được làm từ đá cát vàng và đá nghiền nhỏ được kết dính với nhau bằng xi măng.  Chậu được làm từ những nguyên liệu bền bỉ chịu được nắng gió và thời tiết khắc nhiệt theo đúng tư tưởng nồi đồng cối đá của người Việt Nam.",
+      "about": "Khay nhựa trồng cúc tần được thiết kế bởi công nghệ của Nhật Bản. Khay có thể di chuyển trong quá trình trồng và bảo quản một cách dễ dàng trong quá trình sử dụng."
+    },
+    {
+      "name": "phân đạm",
+      "image": "https://th.bing.com/th/id/OIP.L2JdKeZUIEZ4q7RYGiFyegHaE8?rs=1&pid=ImgDetMain",
+      "price": "9999999",
+      "category": "2",
+      "id": 13,
+      "deskiptions": "Đạm có trong thành phần tất cả các protein đơn giản và phức tạp, mà nó là thành phần chính của màng tế bào thực vật, tham gia vào thành phần của axit Nucleic (tức ADN và ARN), có vai trò cực kỳ quan trọng trong trao đổi vật chất của các cơ quan thực vật.",
+      "about": "Phân ure có 2 dạng mỗi dạng có những đặc điểm riêng biệt khác nhau.  – Loại tinh thể màu trắng, hạt tròn, dễ tan trong nước. Nhược điểm là hút ẩm mạnh  – Loại có dạng viên, nhỏ như trứng cá. Loại này có thêm chất chống ẩm, dễ bảo quản, dễ vận chuyển. Đây là phân được sử dụng khá nhiều trong nông nghiệp."
+    },
+    {
+      "name": "Sẻng cây",
+      "image": "https://th.bing.com/th/id/OIP.cNQTwt32HlqJYsZrMxzXKwHaHa?rs=1&pid=ImgDetMain",
+      "price": "4990000",
+      "category": "3",
+      "id": 14,
+      "deskiptions": "Liềm rựa cán sắt 60cm nông nghiệp sẽ là công cụ hữu ích phục vụ bà con làm vườn hay đi làm rẫy. Với chiều dài 60cm dài rất thuận tiện để chặt phát cây mé nhánh không phải với nhiều. Chất liệu làm nên sản phẩm là thép có độ cứng cao chịu được lực chặt lớn khó mẻ khó bị gãy.",
+      "about": "Liềm rựa cán sắt 60cm nông nghiệp sẽ là công cụ hữu ích phục vụ bà con làm vườn hay đi làm rẫy. Với chiều dài 60cm dài rất thuận tiện để chặt phát cây mé nhánh không phải với nhiều. Chất liệu làm nên sản phẩm là thép có độ cứng cao chịu được lực chặt lớn khó mẻ khó bị gãy."
+    }
+  ],
+  "orders": [
+    {
+      "name": "Sản phẩm 1",
+      "price": "10",
+      "quantity": "10",
+      "id": 1
+    },
+    {
+      "name": "Sản phẩm 2",
+      "price": "2",
+      "quantity": "10000",
+      "id": 2
+    }
+  ],
+  "category": [
+    {
+      
+      "image": "https://th.bing.com/th/id/OIP.1kCyT6S1m4jsVsqBx0AXcQHaFi?rs=1&pid=ImgDetMain",
+      "id": 2,
+      "nameCategory": "Phân bón"
+    },
+    {
+      "nameCategory": "dụng cụ",
+      "image": "https://salt.tikicdn.com/ts/tmp/39/5b/56/fa733b604e6254c05ecdbc22f2f64873.jpg",
+      "id": 3
+    },
+    {
+      "nameCategory": "Đèn cây",
+      "image": "https://th.bing.com/th/id/OIP.ZVsm9zldEaVWEu0qkYaPKwHaHa?w=640&h=640&rs=1&pid=ImgDetMain",
+      "id": 4
+    },
+    {
+      "nameCategory": "Chậu cây",
+      "image": "https://ghedagiago.com/wp-content/uploads/2021/12/chau-cay-canh-3.jpg",
+      "id": 5
+    },
+    {
+      "nameCategory": "Cây cảnh",
+      "image": "https://th.bing.com/th/id/OIP.GR907Cv6gKJV-8Hfh21H0QHaHa?w=1080&h=1080&rs=1&pid=ImgDetMain",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "email": "ngocnv34@fpt.edu.vn",
+      "password": "$2a$10$ZBLKlCuYNAqT.7i0O4AMY.JeCZCmM2Nl2IUWZUVL2/P09kHfJUDYO",
+      "name": "Ngọc",
+      "phone": "0989898989",
+      "repassword": "123456",
+      "id": 1
+    },
+    {
+      "email": "vietnhph48778@fpt.edu.vn",
+      "password": "$2a$10$Yfz1oJx7T5mwCoDP82WEhO7XfX4oJgv9yWZRzaRA9sdTHZkMI17VW",
+      "name": "Hoàng việt",
+      "phone": "0323414122",
+      "repassword": "viet123",
+      "id": 2
+    },
+    {
+      "email": "nguyenhoangviet@gmail.com",
+      "password": "$2a$10$fAWpaHHiuWOtI.4D5PrIOuGuJOwRRXCus/B9UdfXT6/UElSglB07u",
+      "name": "viet123",
+      "phone": "0123456789",
+      "repassword": "v123",
+      "id": 3
+    },
+    {
+      "email": "hoangviet@gmail.com",
+      "password": "$2a$10$IMPEcJrXzSCgyq/CgpQINuv4MMCsrqeOvE9jBTzadqrQS/3bR51K6",
+      "name": "viet123",
+      "phone": "0123456789",
+      "repassword": "v123",
+      "id": 4
+    }
+  ]
+}

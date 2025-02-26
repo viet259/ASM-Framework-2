@@ -1,0 +1,365 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Product Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-green-700 text-white">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+     <div class="flex items-center space-x-4">
+      <input class="px-4 py-2 rounded-md w-96" placeholder="Suchen Sie nach Produkten, Marken und mehr" type="text"/>
+      <button class="bg-white text-green-700 px-4 py-2 rounded-md">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+     <div class="flex items-center space-x-4">
+      <button class="text-white">
+       En
+      </button>
+      <button class="text-white">
+       <i class="fas fa-user">
+       </i>
+       Account
+      </button>
+      <button class="text-white">
+       <i class="fas fa-shopping-cart">
+       </i>
+       Cart
+      </button>
+     </div>
+    </div>
+    <nav class="bg-green-600">
+     <div class="container mx-auto flex justify-between items-center py-2 px-6">
+      <div class="flex space-x-4">
+       <div class="group relative">
+        <button class="text-white">
+         <a href="home.html">Trang chủ</a>
+        </button>
+       </div>
+       <div class="group relative">
+        <button class="text-white">
+         <a href="SP.html">Sản phẩm</a>
+        </button>
+        <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded-md shadow-lg">
+         <a class="block px-4 py-2" href="chitiet.html">
+          Chậu cây
+         </a>
+         <a class="block px-4 py-2" href="#">
+             Phân bón
+            </a>
+            <a class="block px-4 py-2" href="#">
+             Đất
+            </a>
+        </div>
+       </div>
+       <div class="group relative">
+        <button class="text-white">
+         Giới thiệu
+        </button>
+       </div>
+       <div class="group relative">
+         <button class="text-white">
+         Liên hệ
+         </button>
+        </div>
+        
+        
+       
+     
+      </div>
+     </div>
+    </nav>
+   </header>
+
+   
+  <main class="container mx-auto py-8 px-6">
+   <div class="flex justify-between items-center mb-6">
+    <h1 class="text-2xl font-bold">
+     Töpfe &amp; Behälter
+    </h1>
+    <div class="flex space-x-4">
+     <button class="bg-green-200 text-green-800 px-4 py-2 rounded-md">
+      Eckige Töpfe
+     </button>
+     <button class="bg-green-200 text-green-800 px-4 py-2 rounded-md">
+      Runde Töpfe
+     </button>
+     <button class="bg-green-200 text-green-800 px-4 py-2 rounded-md">
+      Untersetzer
+     </button>
+     <button class="bg-green-200 text-green-800 px-4 py-2 rounded-md">
+      Pflanzsäcke
+     </button>
+    </div>
+   </div>
+   <div class="flex justify-between items-center mb-6">
+    <div class="flex space-x-4">
+     <label class="text-gray-700" for="sort">
+      Sort By:
+     </label>
+     <select class="px-4 py-2 rounded-md border border-gray-300" id="sort">
+      <option>
+       Newest
+      </option>
+      <option>
+       Price: Low to High
+      </option>
+      <option>
+       Price: High to Low
+      </option>
+     </select>
+    </div>
+    <div class="flex space-x-4">
+     <label class="text-gray-700" for="show">
+      Show:
+     </label>
+     <select class="px-4 py-2 rounded-md border border-gray-300" id="show">
+      <option>
+       Default
+      </option>
+      <option>
+       10
+      </option>
+      <option>
+       20
+      </option>
+      <option>
+       30
+      </option>
+     </select>
+    </div>
+   </div>
+   <div class="flex">
+    <div class="w-3/4 grid grid-cols-3 gap-6">
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Square cultivation pots" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/VePMbk5t9EM7puZ7SbcQLP5hqO85O8mZtqXJPG2cGJU.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       <a href="chitiet.html">Square cultivation pots</a>
+      </h2>
+      <p class="text-gray-500 line-through">
+       $20.00
+      </p>
+      <p class="text-green-700">
+       $16.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Round plant pots" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/qbO-qVgpEOHuqG4EX_C2lS4wDJGN_fVupbm4ZUu40h8.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Round plant pots
+      </h2>
+      <p class="text-green-700">
+       $20.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Square plant pots" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/IfmJEVgSI372XuX7ZZh_fFwfAwmI-J6lpsZFRukmVd4.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Square plant pots
+      </h2>
+      <p class="text-green-700">
+       $24.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Mesh pots round" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/cHZa_1VY1hcUIEIUTQ6vGOx3qvl4fdXPfLiMcS19po0.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Mesh pots round
+      </h2>
+      <p class="text-gray-500 line-through">
+       $45.00
+      </p>
+      <p class="text-green-700">
+       $40.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Square cultivation pots" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/VePMbk5t9EM7puZ7SbcQLP5hqO85O8mZtqXJPG2cGJU.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Square cultivation pots
+      </h2>
+      <p class="text-green-700">
+       $12.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Mesh pot" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/iyi0U5VBuXsMql51qy8fb6vx3PUMdINT2eIXG-r1hjM.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Mesh pot
+      </h2>
+      <p class="text-green-700">
+       $12.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Square plant" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/2zP-FpAUO-FQoLxtDnOmMq8uf2BS-0E8uB-j_wrWvbE.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Square plant
+      </h2>
+      <p class="text-green-700">
+       $10.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Round plant pot" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/DbgooOkr62m31vkTAHQfL33eo-_8oS2MoN4MzkFscSQ.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Round plant pot
+      </h2>
+      <p class="text-green-700">
+       $12.00
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <img alt="Square plant pot" class="w-full h-40 object-cover mb-4" height="150" src="https://storage.googleapis.com/a1aa/image/JBzaRYNqjXKPhMu9Z8m7n02ISCdWqltsh7w7WJ8OJdw.jpg" width="150"/>
+      <h2 class="text-lg font-bold">
+       Square plant pot
+      </h2>
+      <p class="text-green-700">
+       $12.00
+      </p>
+     </div>
+    </div>
+    
+    <aside class="w-1/4 pl-6">
+     <div class="bg-white p-4 rounded-md shadow-md mb-6">
+      <h2 class="text-lg font-bold mb-4">
+       Kategorien
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         Eckige Töpfe
+        </a>
+       </li>
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         Runde Töpfe
+        </a>
+       </li>
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         Untersetzer
+        </a>
+       </li>
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         Pflanzsäcke
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md mb-6">
+      <img alt="Grow your own favourite plant" class="w-full h-60 object-cover mb-4" height="300" src="https://storage.googleapis.com/a1aa/image/AD7nFKEAt_utKB_1h-EpHHiuxaBZnKizH8pjSS7YEMs.jpg" width="200"/>
+      <h2 class="text-lg font-bold">
+       Grow your own favourite plant
+      </h2>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md mb-6">
+      <h2 class="text-lg font-bold mb-4">
+       Filter By Price
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         $0 to $5000
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="bg-white p-4 rounded-md shadow-md">
+      <h2 class="text-lg font-bold mb-4">
+       Filter By Size
+      </h2>
+      <ul class="space-y-2">
+       <li>
+        <a class="text-green-700 hover:underline" href="#">
+         2m by 50
+        </a>
+       </li>
+      </ul>
+     </div>
+    </aside>
+   </div>
+  </main>
+  
+  <footer class="bg-green-800 text-white py-8">
+   <div class="container mx-auto px-6">
+    <div class="flex justify-between items-center mb-6">
+     <h2 class="text-2xl font-bold">
+      Etwas abonnieren*
+     </h2>
+     <p class="text-lg">
+      Unser Newsletter
+     </p>
+    </div>
+    <div class="flex justify-between items-center mb-6">
+     <p class="text-lg">
+      Get weekly updates about our products and news, no spam guaranteed.
+     </p>
+     <div class="flex space-x-4">
+      <input class="px-4 py-2 rounded-md w-96" placeholder="youremail@example.com" type="email"/>
+      <button class="bg-green-700 text-white px-4 py-2 rounded-md">
+       ABONNIEREN
+      </button>
+     </div>
+    </div>
+    <div class="flex justify-between items-center">
+     <div class="text-sm">
+      <p>
+       2023 Nordal AG, Inc.
+      </p>
+      <p>
+       Learn more about Nordal's exclusive offerings
+      </p>
+     </div>
+     <div class="flex space-x-4">
+      <a class="hover:underline" href="#">
+       Impressum
+      </a>
+      <a class="hover:underline" href="#">
+       AGB
+      </a>
+      <a class="hover:underline" href="#">
+       Datenschutz
+      </a>
+      <a class="hover:underline" href="#">
+       Kontakt
+      </a>
+     </div>
+    </div>
+    <div class="flex justify-between items-center mt-6">
+     <div class="flex space-x-4">
+      <a class="hover:underline" href="#">
+       Facebook
+      </a>
+      <a class="hover:underline" href="#">
+       Twitter
+      </a>
+      <a class="hover:underline" href="#">
+       Instagram
+      </a>
+     </div>
+     <div class="flex space-x-4">
+      <img alt="Flag 1" class="h-5" height="20" src="https://storage.googleapis.com/a1aa/image/6AZ0DVd5Kd121g9JR8Debef4g1zGtEJwI35d3Mv5RCc.jpg" width="30"/>
+      <img alt="Flag 2" class="h-5" height="20" src="https://storage.googleapis.com/a1aa/image/ZRDRnXdrw7o2m0Ylxj1mgRE07IJWNNxRH15bn-PJR0A.jpg" width="30"/>
+      <img alt="Flag 3" class="h-5" height="20" src="https://storage.googleapis.com/a1aa/image/qpRAjfCe8IIpz5ToA2dM5ESExOrq8tsME3EoVJLXLGk.jpg" width="30"/>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
