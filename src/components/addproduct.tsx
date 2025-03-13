@@ -19,8 +19,6 @@ const AddProduct = (props: Props) => {
     const {register,handleSubmit,formState:{errors}} = useForm<IProductForm>()
 
 
-   
-
     const navigate = useNavigate()
     const onSubmit = async (product:IProductForm)=>{
         try {

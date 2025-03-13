@@ -25,6 +25,7 @@ import ClienchitietDm from './layout/client/chitietdanhmuc'
 function App() {
     // Khai báo routes
     const routes = useRoutes([
+      
       {path:'/order-add',element:<OrderAdd/>},
       {path:'/order-list',element:<OrderList/>},      
       {path:'/register',element:<Register/>},
