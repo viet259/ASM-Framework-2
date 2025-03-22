@@ -3,6 +3,9 @@ import { ICategoryForm } from '../interface/category'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import AdminFooter from '../layout/admin/footer'
+import AdminHeader from '../layout/admin/header'
+import AdminSidebar from '../layout/admin/sidebar'
 
 type Props = {
     onAdd:(data:FormData)=>void
@@ -25,8 +28,12 @@ const AddCategory = (props: Props) => {
         }
     }
   return (
-    <div className='max-w-2xl mx-auto py-10'>
-    <h1 className='font-bold text-[24px] text-center'>Thêm mới Danh mục</h1>
+    <div>
+         <AdminHeader/>
+         <div className='flex'>
+         <AdminSidebar/>
+         <div className='content w-4/5'>
+         <h1 className='font-bold text-[24px] text-center'>Thêm mới Danh mục</h1>
     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-4 mt-4 [&_input]:border [&_input]:py-1 [&_input]:px-3'>
         <input {...register("nameCategory",{required:true,minLength:5})} type='text' placeholder='Tên danh mục'/>
        
@@ -38,6 +45,11 @@ const AddCategory = (props: Props) => {
         <button className='bg-green-900 text-white py-1 px-4 rounded'>Thêm mới danh mục</button>
         </div>
     </form>
+         </div>
+
+         </div>
+         <AdminFooter/>
+
 </div>
   )
 }

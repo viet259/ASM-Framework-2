@@ -41,7 +41,7 @@ const ClientHome = (props: Props) => {
    <>
 
   {/* Main Content */}
-  <main className="container mx-auto mt-8">
+  <main className="container mx-auto mt-8 ">
     {/* Hero Section */}
     <section className="bg-green-200 rounded-lg p-8 relative">
       <div className="flex items-center">
