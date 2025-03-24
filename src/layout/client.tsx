@@ -8,7 +8,7 @@ const ClientLayout = () => {
   return (
   <main className='bg-[#f6f9ff]'>
     <ClientHeader/>
-    <div className='flex'>
+    <div className='flex ml-52'>
     <ClientHome/>
 
     </div>

@@ -1,12 +1,13 @@
+
+
 export interface IUser{
     id:number|string;
     name:string;
     email:string;
     phone:string;
     password:string;
+ 
+
 }
-export interface IRegister extends IUser{
-    repassword?:string
-}
-export type IRegisterForm = Omit<IRegister,"id">
+export type IRegisterForm = Omit<IUser,"id">
 export type ILoginForm = Pick<IUser,"email"|"password">
