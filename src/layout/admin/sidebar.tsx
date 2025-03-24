@@ -15,11 +15,12 @@ const AdminSidebar = () => {
     <i className="fas fa-tachometer-alt mr-3 mr-3 flex items-center p-4 text-gray-700 hover:bg-gray-200">   <Link to={'/dashboard'}>Dashboard</Link></i>
        
     <i className="fas fa-table mr-3 flex items-center p-4 text-gray-700 hover:bg-gray-200">   <Link to={'/adminDM'}>Danh mục</Link></i>
-       
+    
       
       
    
-      <i className="fas fa-table mr-3 flex items-center p-4 text-gray-700 hover:bg-gray-200">   <Link to={'/adminSP'}>Sản phẩm</Link></i>
+      <i className="fas fa-table mr-3 flex items-center p-4 text-gray-700 hover:bg-gray-200">   <Link to={'/adminSP'}>Sản phẩm</Link></i><br />
+      <i className="fas fa-user mr-3 flex items-center p-4 text-gray-700 hover:bg-gray-200">   <Link to={'/adminUser'}>User </Link></i>
        
       
      

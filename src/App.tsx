@@ -21,6 +21,7 @@ import DangNhap from './layout/client/dangnhap';
 import Search from './components/search';
 import ClienchitietDm from './layout/client/chitietdanhmuc';
 import CartPage from './pages/CartPage'; // Import CartPage
+import AdminUser from './layout/admin/user';
 
 function App() {
   // Khai báo routes
@@ -62,6 +63,7 @@ function App() {
         />
       ),
     },
+    { path: '/adminUser', element: <AdminUser /> },
     { path: '/adminDM', element: <AdminDanhmuc /> },
     { path: '/Client', element: <ClientLayout /> },
     { path: '/home', element: <ClientHome /> },
