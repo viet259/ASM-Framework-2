@@ -1,6 +1,5 @@
-import React, { createContext, useReducer, useContext, ReactNode } from 'react';
-
-// Định nghĩa kiểu dữ liệu cho sản phẩm trong giỏ hàng
+import React, { createContext, useReducer, useContext, ReactNode, useEffect } from 'react';
+import axios from 'axios';
 interface CartItem {
     id: string;
     name: string;
@@ -9,23 +8,19 @@ interface CartItem {
     image: string;
 }
 
-// Định nghĩa kiểu dữ liệu cho trạng thái giỏ hàng
 interface CartState {
     items: CartItem[];
 }
 
-// Định nghĩa kiểu dữ liệu cho hành động
 type CartAction =
     | { type: 'ADD_TO_CART'; payload: CartItem }
     | { type: 'REMOVE_FROM_CART'; payload: string }
-    | { type: 'CLEAR_CART' };
-
-// Khởi tạo trạng thái ban đầu
+    | { type: 'CLEAR_CART' }
+    | { type: 'SET_CART_ITEMS'; payload: CartItem[] };
 const initialState: CartState = {
     items: [],
 };
 
-// Tạo reducer để xử lý các hành động
 const cartReducer = (state: CartState, action: CartAction): CartState => {
     switch (action.type) {
         case 'ADD_TO_CART':
@@ -35,12 +30,15 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
                     ...state,
                     items: state.items.map(item =>
                         item.id === action.payload.id
-                            ? { ...item, quantity: item.quantity + action.payload.quantity }
+                            ? { ...item, quantity: action.payload.quantity } // Cập nhật số lượng từ payload
                             : item
                     ),
                 };
             }
-            return { ...state, items: [...state.items, action.payload] };
+            return {
+                ...state,
+                items: [...state.items, { ...action.payload, price: Number(action.payload.price) }] // Chuyển đổi price sang số
+            };
 
         case 'REMOVE_FROM_CART':
             return {
@@ -51,12 +49,14 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
         case 'CLEAR_CART':
             return { ...state, items: [] };
 
+        case 'SET_CART_ITEMS':
+            return { ...state, items: action.payload };
+
         default:
             return state;
     }
 };
 
-// Tạo Context
 const CartContext = createContext<{
     state: CartState;
     dispatch: React.Dispatch<CartAction>;
@@ -65,9 +65,25 @@ const CartContext = createContext<{
     dispatch: () => null,
 });
 
-// Tạo Provider để bọc ứng dụng
 export const CartProvider = ({ children }: { children: ReactNode }) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
+
+
+    useEffect(() => {
+        const fetchCartItems = async () => {
+            try {
+                const response = await axios.get('/api/cart');
+                const data = response.data.map((item: CartItem) => ({
+                    ...item,
+                    price: Number(item.price),
+                }));
+                dispatch({ type: 'SET_CART_ITEMS', payload: data });
+            } catch (error) {
+                console.error('Failed to fetch cart items:', error);
+            }
+        };
+        fetchCartItems();
+    }, []);
 
     return (
         <CartContext.Provider value={{ state, dispatch }}>
@@ -76,11 +92,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     );
 };
 
-// Hook để sử dụng CartContext
 export const useCart = () => {
     const { state, dispatch } = useContext(CartContext);
-
-    // Hàm tính tổng số lượng sản phẩm trong giỏ hàng
     const getTotalQuantity = () => {
         return state.items.reduce((total, item) => total + item.quantity, 0);
     };

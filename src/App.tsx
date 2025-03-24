@@ -20,7 +20,9 @@ import DangKy from './layout/client/dangki';
 import DangNhap from './layout/client/dangnhap';
 import Search from './components/search';
 import ClienchitietDm from './layout/client/chitietdanhmuc';
-import CartPage from './pages/CartPage'; // Import CartPage
+import CartPage from './pages/CartPage';
+import ShippingInfoPage from './pages/ShippingInfoPage';
+import SuccessPage from './pages/SuccessPage';
 
 function App() {
   // Khai báo routes
@@ -69,7 +71,9 @@ function App() {
     { path: '/chitiet/:id', element: <Clienchitiet /> },
     { path: '/dangky', element: <DangKy /> },
     { path: '/dangnhap', element: <DangNhap /> },
-    { path: '/cart', element: <CartPage /> }, // Thêm route cho CartPage
+    { path: '/cart', element: <CartPage /> },
+    { path: '/shipping-info', element: <ShippingInfoPage /> },
+    { path: '/success', element: <SuccessPage /> },
   ]);
 
   return routes;
