@@ -64,6 +64,7 @@ function App() {
         />
       ),
     },
+    { path: '/adminUser', element: <AdminUser /> },
     { path: '/adminDM', element: <AdminDanhmuc /> },
     { path: '/Client', element: <ClientLayout /> },
     { path: '/home', element: <ClientHome /> },

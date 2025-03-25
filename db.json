@@ -164,6 +164,22 @@
       "phone": "0123456789",
       "repassword": "v123",
       "id": 4
+    },
+    {
+      "email": "viet123@gmail.com",
+      "password": "$2a$10$GYO.zAy6usI6VIjflMeNKO01zwYXF1mE8uDLlt5C4nnIDVYjZiOpK",
+      "name": "việt",
+      "phone": "0987654311",
+      "repassword": "viet123",
+      "id": 5
+    },
+    {
+      "email": "viet1234@gmail.com",
+      "password": "$2a$10$ZIrNyy.UfRw6/KEFFw3GION9Z8GJBcQU82ZaKeqUFwNL4AxYfy0My",
+      "name": "viet",
+      "phone": "0987654311",
+      "repassword": "v123",
+      "id": 6
     }
   ]
 }
