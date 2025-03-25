@@ -1,6 +1,5 @@
-import React, { createContext, useReducer, useContext, ReactNode } from 'react';
-
-
+import React, { createContext, useReducer, useContext, ReactNode, useEffect } from 'react';
+import axios from 'axios';
 interface CartItem {
     id: string;
     name: string;
@@ -9,22 +8,18 @@ interface CartItem {
     image: string;
 }
 
-
 interface CartState {
     items: CartItem[];
 }
 
-
 type CartAction =
     | { type: 'ADD_TO_CART'; payload: CartItem }
     | { type: 'REMOVE_FROM_CART'; payload: string }
-    | { type: 'CLEAR_CART' };
-
-
+    | { type: 'CLEAR_CART' }
+    | { type: 'SET_CART_ITEMS'; payload: CartItem[] };
 const initialState: CartState = {
     items: [],
 };
-
 
 const cartReducer = (state: CartState, action: CartAction): CartState => {
     switch (action.type) {
@@ -35,12 +30,15 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
                     ...state,
                     items: state.items.map(item =>
                         item.id === action.payload.id
-                            ? { ...item, quantity: item.quantity + action.payload.quantity }
+                            ? { ...item, quantity: action.payload.quantity } // Cập nhật số lượng từ payload
                             : item
                     ),
                 };
             }
-            return { ...state, items: [...state.items, action.payload] };
+            return {
+                ...state,
+                items: [...state.items, { ...action.payload, price: Number(action.payload.price) }] // Chuyển đổi price sang số
+            };
 
         case 'REMOVE_FROM_CART':
             return {
@@ -51,11 +49,13 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
         case 'CLEAR_CART':
             return { ...state, items: [] };
 
+        case 'SET_CART_ITEMS':
+            return { ...state, items: action.payload };
+
         default:
             return state;
     }
 };
-
 
 const CartContext = createContext<{
     state: CartState;
@@ -65,9 +65,25 @@ const CartContext = createContext<{
     dispatch: () => null,
 });
 
-
 export const CartProvider = ({ children }: { children: ReactNode }) => {
     const [state, dispatch] = useReducer(cartReducer, initialState);
+
+
+    useEffect(() => {
+        const fetchCartItems = async () => {
+            try {
+                const response = await axios.get('/api/cart');
+                const data = response.data.map((item: CartItem) => ({
+                    ...item,
+                    price: Number(item.price),
+                }));
+                dispatch({ type: 'SET_CART_ITEMS', payload: data });
+            } catch (error) {
+                console.error('Failed to fetch cart items:', error);
+            }
+        };
+        fetchCartItems();
+    }, []);
 
     return (
         <CartContext.Provider value={{ state, dispatch }}>
@@ -76,11 +92,8 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     );
 };
 
-
 export const useCart = () => {
     const { state, dispatch } = useContext(CartContext);
-
-   
     const getTotalQuantity = () => {
         return state.items.reduce((total, item) => total + item.quantity, 0);
     };
