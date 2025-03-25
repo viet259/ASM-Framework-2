@@ -80,6 +80,15 @@
       "id": 14,
       "deskiptions": "Liềm rựa cán sắt 60cm nông nghiệp sẽ là công cụ hữu ích phục vụ bà con làm vườn hay đi làm rẫy. Với chiều dài 60cm dài rất thuận tiện để chặt phát cây mé nhánh không phải với nhiều. Chất liệu làm nên sản phẩm là thép có độ cứng cao chịu được lực chặt lớn khó mẻ khó bị gãy.",
       "about": "Liềm rựa cán sắt 60cm nông nghiệp sẽ là công cụ hữu ích phục vụ bà con làm vườn hay đi làm rẫy. Với chiều dài 60cm dài rất thuận tiện để chặt phát cây mé nhánh không phải với nhiều. Chất liệu làm nên sản phẩm là thép có độ cứng cao chịu được lực chặt lớn khó mẻ khó bị gãy."
+    },
+    {
+      "name": "chậu cây",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fvi%2Fb%25E1%25BB%25A9c-%25E1%25BA%25A3nh%2Fch%25E1%25BA%25ADu-hoa&psig=AOvVaw2HH9XetV7adrGGXq8mdiy2&ust=1740065247918000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCLtquG0IsDFQAAAAAdAAAAABAE",
+      "price": "141421",
+      "deskiptions": "RWTRSGG",
+      "about": "DFSDFGDFG",
+      "category": "2",
+      "id": 15
     }
   ],
   "orders": [
@@ -98,7 +107,6 @@
   ],
   "category": [
     {
-      
       "image": "https://th.bing.com/th/id/OIP.1kCyT6S1m4jsVsqBx0AXcQHaFi?rs=1&pid=ImgDetMain",
       "id": 2,
       "nameCategory": "Phân bón"

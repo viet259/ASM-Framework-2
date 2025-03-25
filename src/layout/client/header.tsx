@@ -26,16 +26,16 @@ const ClientHeader = () => {
   return (
     <div>
       {/* Header */}
-      <header className="bg-green-700 text-white">
+      <header className="bg-green-700  text-white">
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <div className="flex items-center space-x-4">
             <input
               className="px-4 py-2 rounded-md w-96 text-black"
-              placeholder="Suchen Sie nach Produkten, Marken und mehr"
+              placeholder="Tìm kiếm"
               type="text"
             />
-            <button className="bg-white text-green-700 px-4 py-2 rounded-md">
-              <i className="fas fa-search"></i>
+            <button className="bg-white text-green-700 px-4 py-2 rounded-md ">
+              <i className="fas fa-seach"></i>
             </button>
           </div>
           <div className="flex items-center space-x-4">

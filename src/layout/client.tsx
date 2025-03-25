@@ -6,7 +6,7 @@ import ClientHeader from './client/header'
 
 const ClientLayout = () => {
   return (
-  <main className='bg-[#f6f9ff]'>
+  <main className='bg-[#f6f9ff] ' >
     <ClientHeader/>
     <div className='flex'>
     <ClientHome/>

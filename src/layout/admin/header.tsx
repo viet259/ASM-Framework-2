@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AdminHeader = () => {
   return (
@@ -26,7 +27,8 @@ const AdminHeader = () => {
 
         {/* Header */}
   <div className="flex justify-between items-center mb-6">
-    <h2 className="text-2xl font-semibold">Material Dashboard</h2>
+    <Link to='/Client' className="text-2xl font-semibold">G-store</Link>
+    
     <div className="flex items-center">
       <input
         className="p-2 border rounded mr-4"
