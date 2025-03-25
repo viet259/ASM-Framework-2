@@ -20,9 +20,9 @@ const ClienchitietDm = (props: Props) => {
     useEffect(() => {
       const getProductById = async () => {
         try {
-          const { data } = await axios.get(`http://localhost:3000/products/${id}`);
-          setProduct(data);  // Cập nhật state sản phẩm
-          reset(data); // Reset form với dữ liệu sản phẩm
+          const { data } = await axios.get(`http://localhost:3000/products?category=${id}`);
+          setProduct(data);  
+          reset(data); 
         } catch (error) {
           console.log(error);
         }
