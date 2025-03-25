@@ -17,6 +17,7 @@ const SuccessPage = () => {
                 </button>
             </div>
         </div>
+
     );
 };
 
