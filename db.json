@@ -93,16 +93,34 @@
   ],
   "orders": [
     {
-      "name": "Sản phẩm 1",
-      "price": "10",
-      "quantity": "10",
+      "name": "Hoàng Giang",
+      "address": "đường âu cơ",
+      "phone": "0842234002",
+      "items": [
+        {
+          "id": 7,
+          "name": "cây thủy sinh",
+          "price": 121132,
+          "quantity": 1,
+          "image": "https://thanhcongflowers.com/wp-content/uploads/2024/01/ac544ecef80b53550a1a.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Chậu cây",
+          "price": 12312321,
+          "quantity": 1,
+          "image": "https://th.bing.com/th/id/OIP.N-PutSMc6C8jggCgZdqb1wHaHa?rs=1&pid=ImgDetMain"
+        },
+        {
+          "id": 13,
+          "name": "phân đạm",
+          "price": 9999999,
+          "quantity": 1,
+          "image": "https://th.bing.com/th/id/OIP.L2JdKeZUIEZ4q7RYGiFyegHaE8?rs=1&pid=ImgDetMain"
+        }
+      ],
+      "total": "22433452.00",
       "id": 1
-    },
-    {
-      "name": "Sản phẩm 2",
-      "price": "2",
-      "quantity": "10000",
-      "id": 2
     }
   ],
   "category": [

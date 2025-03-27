@@ -1,8 +1,15 @@
-export interface IOrderField {
-    id?:number|string,
-    name:string,
-    price:number,
-    quantity:number,
-    total:number
+interface IOder {
+    id: number | string;
+    name: string;
+    phone: string;
+    address: string;
+    items: {
+        name: string;
+        price: number;
+        quantity: number;
+        image: string;
+    }[];
+    total: number | string;
 }
-export type IOrder = Omit<IOrderField,"total">
+
+export default IOder
