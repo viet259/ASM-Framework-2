@@ -23,6 +23,8 @@ import ClienchitietDm from './layout/client/chitietdanhmuc';
 import CartPage from './pages/CartPage';
 import ShippingInfoPage from './pages/ShippingInfoPage';
 import SuccessPage from './pages/SuccessPage';
+import AdminUser from './layout/admin/user';
+import AdminDonHang from './layout/admin/donhang';
 
 function App() {
   // Khai báo routes
@@ -64,7 +66,7 @@ function App() {
         />
       ),
     },
-    { path: '/adminUser', element: <AdminUser /> },
+    { path: '/adminUser', element: < AdminUser /> },
     { path: '/adminDM', element: <AdminDanhmuc /> },
     { path: '/Client', element: <ClientLayout /> },
     { path: '/home', element: <ClientHome /> },
@@ -75,6 +77,7 @@ function App() {
     { path: '/cart', element: <CartPage /> },
     { path: '/shipping-info', element: <ShippingInfoPage /> },
     { path: '/success', element: <SuccessPage /> },
+    { path: '/adminDonHanang', element: <AdminDonHang /> },
   ]);
 
   return routes;

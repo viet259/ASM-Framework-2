@@ -1,35 +1,42 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import ClientHeader from '../layout/client/header';
 
 const ShippingInfoPage = () => {
     const location = useLocation();
-    const navgate = useNavigate();
+    const navigate = useNavigate();
     const selectedItems = location.state || [];
-
     const [shippingInfo, setShippingInfo] = useState({
         name: '',
         address: '',
         phone: '',
     });
-
-
     const calculateTotalPrice = () => {
         return selectedItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
     };
-
-
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setShippingInfo((prev) => ({ ...prev, [name]: value }));
     };
 
+    const handleConfirm = async () => {
+        const orderData = {
+            ...shippingInfo,
+            items: selectedItems,
+            total: calculateTotalPrice(),
+        };
 
-    const handleConfirm = () => {
-
-        console.log('Thông tin giao hàng:', shippingInfo);
-        console.log('Danh sách sản phẩm đã chọn:', selectedItems);
-        navgate('/success')
+        try {
+            console.log('Dữ liệu gửi đi:', orderData);
+            const response = await axios.post('http://localhost:3000/orders', orderData);
+            console.log('Phản hồi từ API:', response.data);
+            alert('Đặt hàng thành công!');
+            navigate('/success');
+        } catch (error) {
+            console.error('Lỗi khi đặt hàng:', error);
+            alert('Đã xảy ra lỗi khi đặt hàng. Vui lòng thử lại.');
+        }
     };
 
     return (
@@ -37,8 +44,6 @@ const ShippingInfoPage = () => {
             <ClientHeader />
             <div className="container mx-auto py-8">
                 <h1 className="text-3xl font-bold text-gray-800 mb-6">Thông tin giao hàng</h1>
-
-
                 <div className="bg-white shadow-md rounded-lg p-6 mb-8">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">Thông tin giao hàng</h2>
                     <div className="space-y-4">
@@ -68,8 +73,6 @@ const ShippingInfoPage = () => {
                         />
                     </div>
                 </div>
-
-
                 <div className="bg-white shadow-md rounded-lg p-6">
                     <h2 className="text-xl font-semibold text-gray-800 mb-4">Sản phẩm đã chọn</h2>
                     <div className="space-y-4">
@@ -100,8 +103,6 @@ const ShippingInfoPage = () => {
                         )}
                     </div>
                 </div>
-
-
                 {selectedItems.length > 0 && (
                     <div className="mt-8 flex justify-between items-center">
                         <p className="text-xl font-semibold text-gray-800">
